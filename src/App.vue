@@ -1,5 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+import { getIndex } from './utils/api'
+
+getIndex().then(res => {
+  console.log(res)
+})
+
 </script>
 
 <template>
